@@ -1,0 +1,13 @@
+import sys
+import xbmcgui
+import xbmcplugin
+
+addon_handle = int(sys.argv[1])
+
+xbmcplugin.setContent(addon_handle, 'movies')
+
+url = 'http://1-fss28-s0.streamhoster.com/lv_teleconference3/_definst_/broadcast1/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOiBbeyJSZXNvdXJjZSI6Imh0dHA6Ly8xLWZzczI4LXMwLnN0cmVhbWhvc3Rlci5jb20vbHZfdGVsZWNvbmZlcmVuY2UzL19kZWZpbnN0Xy9icm9hZGNhc3QxL3BsYXlsaXN0Lm0zdTgqIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNDkxNjg1NjE2fSwiSXBBZGRyZXNzIjp7IkFXUzpTb3VyY2VJcCI6IjAuMC4wLjAvMCJ9fX1dfQ__&Signature=ArSY~Rh8h9R-bKru8n~~j8dpTGN1KLbPQeBE2pMtvhdPWcjg6apbpSc74Y~o0qC19NG-2~MX6VF5R~b2haZzbg4iMVh8vxythIfPMvSYzl3zhfGRzv2nTXNwexTf-ZiKFrqLkLGZT2T1RNPAjVjeTZAzZQeZmbR2jZVpVy47jt8cGumkxQVnXHzx00f-4jrgaoYB8TOF~-eHz3HmOlggdkJXrGeCnWMwNEICCjaGLVLjogiFKr~rtMsEETrZQAVHENjKn78kQaDdo9y0DpkFiMWEkkJfTBVKLvrROC8xSkRmpu4vTL-IwhLfGDlvOW5AD6oE8C95gyzISSQwnqbdAQ__&Key-Pair-Id=APKAIQCJLWNYFADX6TFA'
+li = xbmcgui.ListItem('Climb The Wall!', iconImage='icon.png')
+xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
+
+xbmcplugin.endOfDirectory(addon_handle)
