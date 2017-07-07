@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.climbthewall" name="Climb The Wall" version="1.0.0" provider-name="Climb The Wall">
+<addon id="plugin.video.climbthewall" name="Climb The Wall" version="1.0.0" provider-name="Harrell">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -29,7 +29,7 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Install MY Addons</summary>
-		<description>Download and install addons from propagandhi.</description>
+		<description>Download and install addons from Harrelld.</description>
 		<platform>all</platform>
 	</extension>
 </addon>
